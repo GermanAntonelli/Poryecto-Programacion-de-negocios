@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_De_Negocios_II_Parcial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Label Content="Estacionamiento Los Ángeles"  Grid.Row="0" Margin="15"/>
+        <Button Name="btnRegistro" Content="Registro Entrada"  Grid.Row="1" Click="BtnRegistroEntrada_Click"/>
+        <Button Name="btnRegistroest1" Content="Registro Salida"  Grid.Row="2" Click="BtnRegistroSalida_Click"/>
+        <Button Name="btnRegistroest2" Content="Registro Agencia"  Grid.Row="3" Click="BtnRegistroAgencia_Click"/>
+        <Button Name="btnRegistroest3" Content="Registro Tipo"  Grid.Row="4" Click="BtnRegistroTipo_Click"/>
     </Grid>
 </Window>
