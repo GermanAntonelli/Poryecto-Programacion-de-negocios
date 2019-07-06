@@ -5,22 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_De_Negocios_II_Parcial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800">
+        Title="Estacionamiento los Ángeles" Height="550" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="99"/>
+            <RowDefinition Height="99"/>
+            <RowDefinition Height="99"/>
+            <RowDefinition Height="36"/>
+            <RowDefinition Height="5.5"/>
+            <RowDefinition Height="49.5"/>
+            <RowDefinition Height="22"/>
         </Grid.RowDefinitions>
-        <Label Content="Estacionamiento Los Ángeles"  Grid.Row="0" Margin="15"/>
-        <Button Name="btnRegistro" Content="Registro Entrada"  Grid.Row="1" Click="BtnRegistroEntrada_Click"/>
-        <Button Name="btnRegistroest1" Content="Registro Salida"  Grid.Row="2" Click="BtnRegistroSalida_Click"/>
-        <Button Name="btnRegistroest2" Content="Registro Agencia"  Grid.Row="3" Click="BtnRegistroAgencia_Click"/>
-        <Button Name="btnRegistroest3" Content="Registro Tipo"  Grid.Row="4" Click="BtnRegistroTipo_Click"/>
+        <Label Content="Estacionamiento Los Ángeles"  Grid.Row="0" Margin="199,15" FontSize="30" HorizontalAlignment="Center" Width="394"/>
+        <Button Name="btnHoraEntrada" Content="Hora Entrada"  Grid.Row="1"  Click="BtnHoraEntrada_Click" Margin="181,0"/>
+        <Button Name="btnHoraSalida" Content="Hora Salida"  Grid.Row="2" Click="BtnHoraSalida_Click" Margin="181,0"/>
+        <Button Name="btnRegistroAuromovil" Content="Registro Automovil"  Grid.Row="3" Click="BtnRegistroAgencia_Click" Margin="181,0"/>
+        <Button Name="btnRegistroTipo" Content="Registro Tipo"  Grid.Row="3" Click="BtnRegistroTipo_Click" Grid.RowSpan="4" Margin="181,97,181,0"/>
     </Grid>
 </Window>
